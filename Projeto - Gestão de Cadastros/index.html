@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Desafio 2 Hiring Coders</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script type="text/javascript" src="js/funcoes.js"></script>
+</head>
+<body>
+
+    <div align="center">
+        <img src="imagens/pessoasCadastradas.png">
+    </div>
+   <form>
+       <table>
+           <tr>
+               <td> Nome do Cliente</td>
+               <td><input type="text" id="txtNome"></td>
+           </tr>
+
+           <tr>
+               <td> Endereço do cliente</td>
+               <td> <input type="text" id="txtEndereco"></td>
+           </tr>
+
+           <tr>
+               <td>Email do Cliente</td>
+               <td> <input type="text" id="txtEmail"></td>
+           </tr>
+
+           <tr>
+               <td>Nome do Produto</td>
+               <td><input type="text" id="txtProduto"></td>
+           </tr>
+
+           <tr>
+               <td> Código do Produto</td>
+               <td> <input type="text" id="txtCodigo"></td>
+           </tr>
+
+           <tr>
+               <td> Quantidade de produtos no estoque</td>
+               <td> <input type="text" id="txtQuantidade"></td>
+           </tr>
+
+           <tr align="center">
+               <td>
+                   <input type="button" value="Cadastrar" class="alinhaBtns" onclick="validarProduto(
+                   'txtNome', 'txtEndereco', 'txtEmail', 'txtProduto', 'txtCodigo' , 'txtQuantidade' )">
+
+                   <input type="button" value="Listar" class="alinhaBtns" onclick="window.open('listar.html', '_self')">
+               </td>
+           </tr>
+       </table>
+   </form>
+</body>
+</html>
